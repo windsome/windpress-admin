@@ -163,6 +163,13 @@ class AppWraper extends Component {
             loading: Loading
           })}
         />
+        <Route
+          path="/admin_test"
+          component={Loadable({
+            loader: () => import('./Admin'),
+            loading: Loading
+          })}
+        />
         <Route component={AllLink} />
       </Switch>
     );
