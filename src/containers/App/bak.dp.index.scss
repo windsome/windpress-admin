@@ -1,0 +1,106 @@
+.bd-example {
+  position: relative;
+  padding: 1rem;
+  margin: 1rem -1rem;
+  border: solid #f7f7f9;
+  border-width: 0.2rem 0 0;
+}
+
+@media (min-width: 576px) {
+  .bd-example {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-width: 0.2rem;
+  }
+}
+
+.menu-item {
+  float: left;
+  position: relative;
+  width: 24.9%;
+  min-height: 1px;
+  padding: 10px;
+  text-align: center;
+  color: #999;
+  a {
+    text-decoration: none;
+    color: #666;
+    &:hover,
+    &:focus {
+      color: #ff8500;
+    }
+    .menu-icon {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border: solid 1px;
+      border-radius: 50%;
+      font-size: 15px;
+    }
+    .menu-text {
+      font-size: 12px;
+      white-space: nowrap;
+    }
+  }
+  a.menu-active {
+    color: #ff8500;
+  }
+}
+
+.ad-model1 {
+  width: 100%;
+}
+
+.vc-flexbox {
+  display: flex;
+}
+.vc-align-items-center {
+  align-items: center;
+}
+.vc-flexbox-vertical {
+  flex-direction: column;
+}
+
+.ad3-left {
+  width: 45%;
+  height: 170px;
+  align-items: center;
+  flex-direction: column;
+}
+.ad3-right {
+  width: 54.7%;
+}
+
+.ad-nolive-title {
+  white-space: nowrap;
+  word-wrap: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  line-height: 25px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 16px;
+}
+.ad-nolive-subtitle {
+  white-space: nowrap;
+  word-wrap: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 12px;
+  height: 12px;
+  text-align: center;
+  font-size: 12px;
+  color: #e2b689;
+  margin-top: 3px;
+}
+.ad-nolive-pic {
+  width: 90px;
+  height: 90px;
+  margin-top: 12px;
+  background-size: 90px 90px;
+}

@@ -1,0 +1,231 @@
+URL(POST)：
+https://livedemo.tim.qq.com/interface.php
+请求头：
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 30
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: livedemo.tim.qq.com
+Origin: http://video.qcloud.com
+Referer: http://video.qcloud.com/sdk/ugcuploader.html?_ga=1.66435498.505069521.1516586188
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+请求：
+{"Action":"GetVodSignatureV2"}
+响应：
+{"returnValue":0,"returnMsg":"return successfully!","returnData":{"signature":"T1vwu5uUiaD84vc0PNTPJJ6kegpzZWNyZXRJZD1BS0lEbVc1VVFSYUF6bVJ2Slpzcm5vMTRCUnBBUVZlMUlvOVYmY3VycmVudFRpbWVTdGFtcD0xNTI0NDY2MDQyJmV4cGlyZVRpbWU9MTUyNDU1MjQ0MiZwcm9jZWR1cmU9WElBT1pISUJPLURFRkFVTFQmcmFuZG9tPTEwNDEzMzA3OTU="}}
+
+
+URL(POST)：
+https://vod2.qcloud.com/v3/index.php?Action=ApplyUploadUGC
+请求头：
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 306
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: vod2.qcloud.com
+Origin: http://video.qcloud.com
+Referer: http://video.qcloud.com/sdk/ugcuploader.html?_ga=1.63111663.1343055587.1519825032
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+请求：
+{
+    signature:
+      'xuSyMMbHwH4gmeCxfaLY19Nmqy5zZWNyZXRJZD1BS0lEbVc1VVFSYUF6bVJ2Slpzcm5vMTRCUnBBUVZlMUlvOVYmY3VycmVudFRpbWVTdGFtcD0xNTI0Mzg2ODcwJmV4cGlyZVRpbWU9MTUyNDQ3MzI3MCZwcm9jZWR1cmU9WElBT1pISUJPLURFRkFVTFQmcmFuZG9tPTU0MTQwNTk2NA==',
+    videoName: 'VID_20170525_102356',
+    videoType: 'mp4',
+    videoSize: 214455733
+}
+响应：
+{"code":0,"message":"成功","data":{"video":{"storageSignature":"3gftblWX/3QFwiRIXdVLppie4NhhPTEwMDIyODUzJmI9MzJkNzBlYWJ2b2RnenAxMjUzNjY4NTA4Jms9QUtJRElXZTdBdEkxMFBRa204UkVEbDRVTzdJNm15bjZOREY3JmU9MTUyNDU1OTY3MCZ0PTE1MjQzODY4NzAmcj02OTgwNzI5NDQmZj0vMTAwMjI4NTMvMzJkNzBlYWJ2b2RnenAxMjUzNjY4NTA4LzMyZDcwZWFidm9kZ3pwMTI1MzY2ODUwOC8wMDkxNzJiNzc0NDczOTgxNTU1OTg5MDEwNDkvRFJhcFlpQjUxaTRBLm1wNA==","storagePath":"/32d70eabvodgzp1253668508/009172b77447398155598901049/DRapYiB51i4A.mp4"},"storageAppId":10022853,"storageBucket":"32d70eabvodgzp1253668508","storageRegion":"gzp","storageRegionV5":"ap-guangzhou-2","domain":"vod2.qcloud.com","vodSessionKey":"3FEmq9DWHl1xF819mM4TLTM03ZGdLNcum47rEMoithp7UgRQA4uAs4MVgUxQRWEugBaaxWxmmhfbv1Ppb/NukjaxonYHcrs2JvYCqJ41qP/EINezf0rFP3KIVMM9Hz7/rPdQRdRPabmzPlErLsXOjA5NZ7UvVOnWGLilShdNGjvOYWdvbqfyCpqCRYoTuLzLGdfUlYaVBIP+f3QfmOflbW8nuOzXzPrAbMUDyhEe7CcQ7joxSs13HhWQnSze9xeZ7e8nRsEmI7UQRf9amqmf1jbjqyxOn9Brw4jcRtWtd/XpfOuhDwjTvlP80uvyDG8mp74PLasSnMYlxenfxcWGlf+pXRPzANrs5h2xmMH6d5gKpVaEKQ8jBirZSOVahaZ+bwoeBBTa+aKy762Of5j20c77HjLmqxA1459locghbvWpeJ0nB1zz9MUnEx4Fcj65B+oOqSi8j+8KuOYknHj3DmfnE1aR4zXbc3pdvRr2O5iAEzkp4GmzytYj5HvfeFGej6vG9NMWzEvYqrzOa87U/2nbdpmM/7RJeq0T60HS49//WWzW/h4kLrpGmg==","tempCertificate":{"secretId":"AKIDLJIYNQItW3sSbUkoCshZVLbzoIbFqctC","secretKey":"ynlL4jrRgw5KSJicRfo9zpN5dA73w8NR","token":"7207c3c20f4451387e5a1231e8b446112af49b8c30001","expiredTime":1524394071},"appId":1253668508,"timestamp":1524386871}}
+
+
+URL(404)：
+http://gzp.file.myqcloud.com/files/v2/10022853/32d70eabvodgzp1253668508/32d70eabvodgzp1253668508/009172b77447398155598901049/DRapYiB51i4A.mp4?sign=3gftblWX%2F3QFwiRIXdVLppie4NhhPTEwMDIyODUzJmI9MzJkNzBlYWJ2b2RnenAxMjUzNjY4NTA4Jms9QUtJRElXZTdBdEkxMFBRa204UkVEbDRVTzdJNm15bjZOREY3JmU9MTUyNDU1OTY3MCZ0PTE1MjQzODY4NzAmcj02OTgwNzI5NDQmZj0vMTAwMjI4NTMvMzJkNzBlYWJ2b2RnenAxMjUzNjY4NTA4LzMyZDcwZWFidm9kZ3pwMTI1MzY2ODUwOC8wMDkxNzJiNzc0NDczOTgxNTU1OTg5MDEwNDkvRFJhcFlpQjUxaTRBLm1wNA%3D%3D
+请求头：
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 184
+Content-Type: multipart/form-data; boundary=---------------------------7697581991765245164559296567
+Host: gzp.file.myqcloud.com
+Origin: http://video.qcloud.com
+Referer: http://video.qcloud.com/sdk/ugcuploader.html?_ga=1.63111663.1343055587.1519825032
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+请求：
+-----------------------------7697581991765245164559296567
+Content-Disposition: form-data; name="op"
+
+upload_slice_list
+-----------------------------7697581991765245164559296567--
+响应：
+{"code":-197,"message":"ERROR_CMD_FILE_NOTEXIST","request_id":"NWFkYzRjMzhfMTkyMmI2MGFfN2IyMl9mYzM5Mg=="}
+
+
+URL(POST-无状态码)：
+http://gzp.file.myqcloud.com/files/v2/10022853/32d70eabvodgzp1253668508/32d70eabvodgzp1253668508/009172b77447398155598901049/DRapYiB51i4A.mp4?sign=3gftblWX/3QFwiRIXdVLppie4NhhPTEwMDIyODUzJmI9MzJkNzBlYWJ2b2RnenAxMjUzNjY4NTA4Jms9QUtJRElXZTdBdEkxMFBRa204UkVEbDRVTzdJNm15bjZOREY3JmU9MTUyNDU1OTY3MCZ0PTE1MjQzODY4NzAmcj02OTgwNzI5NDQmZj0vMTAwMjI4NTMvMzJkNzBlYWJ2b2RnenAxMjUzNjY4NTA4LzMyZDcwZWFidm9kZ3pwMTI1MzY2ODUwOC8wMDkxNzJiNzc0NDczOTgxNTU1OTg5MDEwNDkvRFJhcFlpQjUxaTRBLm1wNA==
+请求头：
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 19679
+Content-Type: multipart/form-data; boundary=---------------------------187961259714572396642065039982
+Host: gzp.file.myqcloud.com
+Origin: http://video.qcloud.com
+Referer: http://video.qcloud.com/sdk/ugcuploader.html?_ga=1.63111663.1343055587.1519825032
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+请求：
+-----------------------------187961259714572396642065039982
+Content-Disposition: form-data; name="uploadparts"
+
+[{"offset":0,"datalen":1048576,"datasha":"f333e37f041562bd1320f864e1f54598aef8d0b3"},{"offset":1048576,"datalen":1048576,"datasha":"23e6c5f0d474e415a61ffe4cdcbe7fcb66c60c30"},{"offset":2097152,"datalen":1048576,"datasha":"9ba7621e987410a0fcf4306f454cbf0d8194d19e"},{"offset":3145728,"datalen":1048576,"datasha":"da5f2a136e4e89cdc80548329cf7273d6b129399"},{"offset":4194304,"datalen":1048576,"datasha":"a23a5b033095bf4086bc46f1333cccac3ca3e608"},{"offset":5242880,"datalen":1048576,"datasha":"3949535aa970db8e9f8f1689de70c694a26d18aa"},{"offset":207618048,"datalen":1048576,"datasha":"5ede13c050fd6b3a989b5285fdd38207151a978e"},{"offset":208666624,"datalen":1048576,"datasha":"7059cf8b071756b54f2fe0ff279adafdd6a3c3ea"},{"offset":209715200,"datalen":1048576,"datasha":"1e608bc422b46fd38447f0ed86187c2adbb98719"},{"offset":210763776,"datalen":1048576,"datasha":"243c32323fa5692cf698abb7c75f4a666737e6ae"},{"offset":211812352,"datalen":1048576,"datasha":"7ea1a62e0362d0119258d68ff29115c554c057ae"},{"offset":212860928,"datalen":1048576,"datasha":"7f82fa6515958d64baf54248924958b5341fcea8"},{"offset":213909504,"datalen":546229,"datasha":"a6114ead8768caf01d0dd5ec0bb4072da359c401"}]
+-----------------------------187961259714572396642065039982
+Content-Disposition: form-data; name="sha"
+
+a6114ead8768caf01d0dd5ec0bb4072da359c401
+-----------------------------187961259714572396642065039982
+Content-Disposition: form-data; name="op"
+
+upload_slice_init
+-----------------------------187961259714572396642065039982
+Content-Disposition: form-data; name="filesize"
+
+214455733
+-----------------------------187961259714572396642065039982
+Content-Disposition: form-data; name="slice_size"
+
+1048576
+-----------------------------187961259714572396642065039982
+Content-Disposition: form-data; name="biz_attr"
+
+
+-----------------------------187961259714572396642065039982
+Content-Disposition: form-data; name="insertOnly"
+
+1
+-----------------------------187961259714572396642065039982--
+响应(需要继续上传)：
+{"code":0,"message":"SUCCESS","request_id":"NWFkYzRjODlfYTIzYjYwYV8yZDg1X2YxNjZl","data":{"session":"4b254048aa1af2d6d6751feecd9aa453b9ab8b2df2793cf32060c029f6ba9179ad01b60b7d266486999b2b3e7f90e5f958e7b0f7ae2d5146ce0a75ae7697a3c331c1491b3abc4dc20d078762e78f010cd01297a7d38d506b0aae401ae37ca59b","slice_size":1048576}}
+响应(已经上传过了，服务器端已存在文件)：
+{"code":0,"message":"SUCCESS","request_id":"NWFkZDg2NmVfMzIyNGI2MGFfNjg5XzEwYWY0MQ==","data":{"access_url":"http://32d70eabvodgzp1253668508-10022853.file.myqcloud.com/32d70eabvodgzp1253668508/306ce5a77447398155612043238/agaag8Xy7JIA.mp4","resource_path":"/10022853/32d70eabvodgzp1253668508/32d70eabvodgzp1253668508/306ce5a77447398155612043238/agaag8Xy7JIA.mp4","source_url":"http://32d70eabvodgzp1253668508-10022853.cosgzp.myqcloud.com/32d70eabvodgzp1253668508/306ce5a77447398155612043238/agaag8Xy7JIA.mp4","url":"http://gzp.file.myqcloud.com/files/v2/10022853/32d70eabvodgzp1253668508/32d70eabvodgzp1253668508/306ce5a77447398155612043238/agaag8Xy7JIA.mp4","vid":"4744466bb3911b9e31b42f32facfc2311524467310"}}
+
+
+URL(OPTIONS)：
+http://gzp.file.myqcloud.com/files/v2/10022853/32d70eabvodgzp1253668508/32d70eabvodgzp1253668508/009172b77447398155598901049/DRapYiB51i4A.mp4?sign=3gftblWX%2F3QFwiRIXdVLppie4NhhPTEwMDIyODUzJmI9MzJkNzBlYWJ2b2RnenAxMjUzNjY4NTA4Jms9QUtJRElXZTdBdEkxMFBRa204UkVEbDRVTzdJNm15bjZOREY3JmU9MTUyNDU1OTY3MCZ0PTE1MjQzODY4NzAmcj02OTgwNzI5NDQmZj0vMTAwMjI4NTMvMzJkNzBlYWJ2b2RnenAxMjUzNjY4NTA4LzMyZDcwZWFidm9kZ3pwMTI1MzY2ODUwOC8wMDkxNzJiNzc0NDczOTgxNTU1OTg5MDEwNDkvRFJhcFlpQjUxaTRBLm1wNA%3D%3D
+请求头：
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Access-Control-Request-Method: POST
+Connection: keep-alive
+Host: gzp.file.myqcloud.com
+Origin: http://video.qcloud.com
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+响应：
+{"code":0,"message":"SUCCESS","request_id":"NWFkYzRjOGFfYTIzYjYwYV8yZDdkX2Y5ZTAy"}
+
+URL(POST数据1)：
+http://gzp.file.myqcloud.com/files/v2/10022853/32d70eabvodgzp1253668508/32d70eabvodgzp1253668508/009172b77447398155598901049/DRapYiB51i4A.mp4?sign=3gftblWX%2F3QFwiRIXdVLppie4NhhPTEwMDIyODUzJmI9MzJkNzBlYWJ2b2RnenAxMjUzNjY4NTA4Jms9QUtJRElXZTdBdEkxMFBRa204UkVEbDRVTzdJNm15bjZOREY3JmU9MTUyNDU1OTY3MCZ0PTE1MjQzODY4NzAmcj02OTgwNzI5NDQmZj0vMTAwMjI4NTMvMzJkNzBlYWJ2b2RnenAxMjUzNjY4NTA4LzMyZDcwZWFidm9kZ3pwMTI1MzY2ODUwOC8wMDkxNzJiNzc0NDczOTgxNTU1OTg5MDEwNDkvRFJhcFlpQjUxaTRBLm1wNA%3D%3D
+请求头：
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 1049627
+Content-Type: multipart/form-data; boundary=---------------------------145285951214824302942067686140
+Host: gzp.file.myqcloud.com
+Origin: http://video.qcloud.com
+Referer: http://video.qcloud.com/sdk/ugcuploader.html?_ga=1.63111663.1343055587.1519825032
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+请求：
+-----------------------------145285951214824302942067686140
+Content-Disposition: form-data; name="sliceSize"
+
+1048576
+-----------------------------145285951214824302942067686140
+Content-Disposition: form-data; name="op"
+
+upload_slice_data
+-----------------------------145285951214824302942067686140
+Content-Disposition: form-data; name="session"
+
+4b254048aa1af2d6d6751feecd9aa453b9ab8b2df2793cf32060c029f6ba9179ad01b60b7d266486999b2b3e7f90e5f958e7b0f7ae2d5146ce0a75ae7697a3c331c1491b3abc4dc20d078762e78f010cd01297a7d38d506b0aae401ae37ca59b
+-----------------------------145285951214824302942067686140
+Content-Disposition: form-data; name="offset"
+
+0
+-----------------------------145285951214824302942067686140
+Content-Disposition: form-data; name="sha"
+
+a6114ead8768caf01d0dd5ec0bb4072da359c401
+-----------------------------145285951214824302942067686140
+Content-Disposition: form-data; name="fileContent"; filename="blob"
+Content-Type: application/octet-stream
+响应：
+{"code":0,"message":"SUCCESS","request_id":"NWFkYzRjOGFfY2QyM2I2MGFfNWNmNV8xMDA5MWM=","data":{"datalen":1048576,"datamd5":"8a2cb98db774c4af6b9017d3e4e76929","offset":0,"session":"4b254048aa1af2d6d6751feecd9aa453b9ab8b2df2793cf32060c029f6ba9179ad01b60b7d266486999b2b3e7f90e5f958e7b0f7ae2d5146ce0a75ae7697a3c331c1491b3abc4dc20d078762e78f010cd01297a7d38d506b0aae401ae37ca59b"}}
+
+
+URL(POST数据2)：
+http://gzp.file.myqcloud.com/files/v2/10022853/32d70eabvodgzp1253668508/32d70eabvodgzp1253668508/009172b77447398155598901049/DRapYiB51i4A.mp4?sign=3gftblWX%2F3QFwiRIXdVLppie4NhhPTEwMDIyODUzJmI9MzJkNzBlYWJ2b2RnenAxMjUzNjY4NTA4Jms9QUtJRElXZTdBdEkxMFBRa204UkVEbDRVTzdJNm15bjZOREY3JmU9MTUyNDU1OTY3MCZ0PTE1MjQzODY4NzAmcj02OTgwNzI5NDQmZj0vMTAwMjI4NTMvMzJkNzBlYWJ2b2RnenAxMjUzNjY4NTA4LzMyZDcwZWFidm9kZ3pwMTI1MzY2ODUwOC8wMDkxNzJiNzc0NDczOTgxNTU1OTg5MDEwNDkvRFJhcFlpQjUxaTRBLm1wNA%3D%3D
+请求头：
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 1049626
+Content-Type: multipart/form-data; boundary=---------------------------91883686416452072621559879834
+Host: gzp.file.myqcloud.com
+Origin: http://video.qcloud.com
+Referer: http://video.qcloud.com/sdk/ugcuploader.html?_ga=1.63111663.1343055587.1519825032
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+请求：
+-----------------------------91883686416452072621559879834
+Content-Disposition: form-data; name="sliceSize"
+
+1048576
+-----------------------------91883686416452072621559879834
+Content-Disposition: form-data; name="op"
+
+upload_slice_data
+-----------------------------91883686416452072621559879834
+Content-Disposition: form-data; name="session"
+
+4b254048aa1af2d6d6751feecd9aa453b9ab8b2df2793cf32060c029f6ba9179ad01b60b7d266486999b2b3e7f90e5f958e7b0f7ae2d5146ce0a75ae7697a3c331c1491b3abc4dc20d078762e78f010cd01297a7d38d506b0aae401ae37ca59b
+-----------------------------91883686416452072621559879834
+Content-Disposition: form-data; name="offset"
+
+1048576
+-----------------------------91883686416452072621559879834
+Content-Disposition: form-data; name="sha"
+
+a6114ead8768caf01d0dd5ec0bb4072da359c401
+-----------------------------91883686416452072621559879834
+Content-Disposition: form-data; name="fileContent"; filename="blob"
+Content-Type: application/octet-stream
+
+ÎûË·kÊ°¥z~d¶åÊ8ÓE0Ý-(çóµ¢ÇÅÌáGs'ýN¦Nà;÷ã÷Ë-ß¯òñ¯A¢@|>i­¨êa%îd¨O ¹ö¾c=ZÍâr5ºCI®¢ÀÕ&P@ùsd8èÜpe~6
+响应：
+{"code":0,"message":"SUCCESS","request_id":"NWFkYzRjOGFfYTIzYjYwYV8yZDczX2ZmMTQ5","data":{"datalen":1048576,"datamd5":"2a48b77c5dfe70b75b1f3d988735ceea","offset":1048576,"session":"4b254048aa1af2d6d6751feecd9aa453b9ab8b2df2793cf32060c029f6ba9179ad01b60b7d266486999b2b3e7f90e5f958e7b0f7ae2d5146ce0a75ae7697a3c331c1491b3abc4dc20d078762e78f010cd01297a7d38d506b0aae401ae37ca59b"}}
+
+
+URL(POST)：
+https://vod2.qcloud.com/v3/index.php?Action=CommitUploadUGC
+请求头：
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Content-Length: 799
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Host: vod2.qcloud.com
+Origin: http://video.qcloud.com
+Referer: http://video.qcloud.com/sdk/ugcuploader.html?_ga=1.66435498.505069521.1516586188
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0
+请求：
+{"signature":"nvrLkEIy9IXrJ4zpPP5EWhcYs1BzZWNyZXRJZD1BS0lEbVc1VVFSYUF6bVJ2Slpzcm5vMTRCUnBBUVZlMUlvOVYmY3VycmVudFRpbWVTdGFtcD0xNTI0NDY2MDQ4JmV4cGlyZVRpbWU9MTUyNDU1MjQ0OCZwcm9jZWR1cmU9WElBT1pISUJPLURFRkFVTFQmcmFuZG9tPTIxMjgxMTk5NTE=","vodSessionKey":"3FEmq9DWHl1xF819mM4kXFVHzdfFf4J06tTHYIpg7EtvShlCRdDW7tllwh1nXHUii3fPhx4jy06G/kL/b7Y1kmTuhHgWRqExKukGu5YiqPuWL9LmJgqfcmCGStZjbmS/yqAcGMZNabqielx4e8/sgQtyYqY9BuLGArihGBhIT2KDcT47au+2X5yAQogSs7DDEM3Rk46VC4KrcXcYg/L6diF/6byNtq2KEpVemwoL7Ft3rTIQQuEBE1ePvW/WpRmZhZ8wX/wqDsNOX5l+062AjDb1qz1di5coopHGcNWlXfX0DLTkAR3Nykr8nqD3GS0CvawzL7YTnN1ewunJxdKf3P2zehT4H/vnsQqhjdnsNsJX+Aj3dVV3fnbIRf5ZgrBlfkVPUUSAn/Lws7+FfZT7wNfpX2+u7AkP7oBv14tjOuOnb8VgAE3z9NI+BzIOBH34UP0HvXP0jv0etqUknl7wSTmjUwaA7yG7Dwsqy3DPC7jOMhga01ndpNZXj0n/V2u0qLCSwPNytyrpEXsgOkV7cyD7KpAOQrxAPA=="}
+响应：
+{"code":0,"message":"成功","data":{"video":{"url":"http://1253668508.vod2.myqcloud.com/32d70eabvodgzp1253668508/f60c24d47447398155611837943/PE5aEmC5b1QA.mp4","verify_content":"emdHTPljTSsIglyK4PPXOakgreZFeHBUaW1lPTE1MjQ0Njk2NjkmRmlsZUlkPTc0NDczOTgxNTU2MTE4Mzc5NDM="},"fileId":"7447398155611837943"}}

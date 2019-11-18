@@ -1,0 +1,30 @@
+.hoe-left-panel {
+  background: #3498db none repeat scroll 0 0;
+  color: #d7e9fc;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.menu-item {
+  background: #3498db;
+  border-top: 1px solid #3ea2e5;
+  color: #d7e9fc;
+  border-right: 1px solid #3ea2e5;
+  .sul {
+    background-color: #0e72b5;
+  }
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: #278bce;
+  }
+}
+.menu-item.active {
+  background: #278bce;
+  border-top: 1px solid #3ea2e5;
+  color: #fff;
+  .label {
+    color: #d7e9fc;
+  }
+  .selected {
+    border-right: 7px solid #fff;
+  }
+}

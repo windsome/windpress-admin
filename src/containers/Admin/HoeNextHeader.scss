@@ -1,0 +1,44 @@
+.hoe-right-header .right-navbar,
+.left-navbar {
+  .dropdown-menu > li > a {
+    clear: both;
+    color: #7e7e7e;
+    display: block;
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.42857;
+    padding: 6px 10px;
+    white-space: nowrap;
+    > i {
+      display: inline-block;
+      margin-right: 9px;
+      width: 15px;
+    }
+    > .badge {
+      border-radius: 12px !important;
+      display: inline;
+      font-size: 11px;
+      font-weight: 300;
+      height: 18px;
+      margin-top: 1px;
+      padding: 3px 6px;
+      position: absolute;
+      right: 3px;
+      text-align: center;
+      text-shadow: none;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+  .dropdown {
+    .dropdown-menu {
+      margin: 0;
+    }
+    &:hover,
+    &:focus {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.header__photo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url(https://a0.muscache.com/airbnb/static/slash_host/never_a_stranger-91db63c401ad8301408ec3f24fd0f113.jpg);
+}
+
+.bg-babu {
+  background-color: #00a699;
+}
+
+.step0part2 {
+  .number {
+    display: inline-block;
+    background-color: #ffc107;
+    width: 1rem;
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+  }
+}
+
+.step3 {
+  .item {
+    position: relative;
+  }
+  .deselect {
+    position: absolute;
+  }
+}
+
+.zoom-ctrl {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid #333;
+  span {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #333;
+    &:hover {
+      background: #fff;
+      color: #333;
+    }
+  }
+}

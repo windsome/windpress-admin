@@ -1,0 +1,38 @@
+.draft-plugin-buttonWrapper {
+  display: inline-block;
+}
+
+.draft-plugin-button {
+  background: #fbfbfb;
+  color: #888;
+  font-size: 18px;
+  border: 0;
+  padding-top: 5px;
+  vertical-align: bottom;
+  height: 34px;
+  width: 36px;
+  svg {
+    fill: #888;
+  }
+
+  &:hover,
+  &:focus {
+    background: #f3f3f3;
+    outline: 0; /* reset for :focus */
+  }
+}
+
+.draft-plugin-button-active {
+  background: #efefef;
+  color: #444;
+  svg {
+    fill: #444;
+  }
+}
+
+.draft-plugin-separator {
+  display: inline-block;
+  border-right: 1px solid #ddd;
+  height: 24px;
+  margin: 0 0.5em;
+}

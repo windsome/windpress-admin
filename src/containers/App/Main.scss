@@ -1,0 +1,207 @@
+body {
+  background-color: #f0f0f0;
+}
+
+.head-person {
+  max-width: 100px;
+}
+.advertise1 {
+  width: 100%;
+  height: 160px;
+}
+.big-icon {
+  padding: 0.13rem 0.1rem 0;
+  background-color: #fff;
+  font-size: 1rem;
+  .big-icon-item {
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    .big-icon-item-text {
+      font-weight: 500;
+      text-align: center;
+      line-height: 2em;
+      font-size: 0.7em;
+      color: #fff;
+    }
+  }
+  .item0 {
+    border-color: #00b556;
+    background-color: #01ce61;
+  }
+  .item1 {
+    border-color: #10b89f;
+    background-color: #11d1b4;
+  }
+  .item2 {
+    border-color: #10aab8;
+    background-color: #11c7d1;
+  }
+  .item3 {
+    border-color: #01a0d4;
+    background-color: #01b2ee;
+  }
+}
+
+.second-category {
+  padding: 0.13rem 0.1rem;
+  background-color: #fff;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.activitylist-item {
+  font-size: 1rem;
+  .activitylist-left-img {
+    width: 90px;
+    height: 90px;
+  }
+  .activitylist-right-img {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .activitylist-title {
+    width: 100%;
+    line-height: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+  }
+
+  .activitylist-subtitle {
+    line-height: 1.5em;
+    font-size: 60%;
+    text-align: center;
+    color: #e2b689;
+  }
+
+  .activitylist-left-title {
+    line-height: 1.5em;
+    color: #333;
+    font-weight: 700;
+  }
+  .activitylist-left-subtitle {
+    line-height: 1.5em;
+    font-size: 60%;
+    color: #e2b689;
+  }
+}
+
+.videoBox {
+  background-color: #fff;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background-image: linear-gradient(-180deg, #e7f1ff 0, #fff 100%);
+  text-align: left;
+  .videoLogo {
+    width: 120px;
+    height: 31px;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAABdCAMAAAC/+wxNAAADAFBMV…zD6sLDD3WFPzxcWG2eWdkX5j+yttby2MpYuevsvhT79r+0lzixihevxstdaaaaaelftksuqmcc);
+  }
+  .videoTop {
+    margin-bottom: 15px;
+  }
+  .videoBox-titleText {
+    font-size: 18px;
+    color: #1f3250;
+    line-height: 20px;
+    font-weight: 700;
+  }
+  .videoBox-subTitleText {
+    font-size: 12px;
+    color: #687992;
+    line-height: 13px;
+    margin-top: 4px;
+  }
+
+  .moreVedioBtn {
+    height: 25px;
+    display: block;
+    background-image: linear-gradient(90deg, #11c7d1 0, #189eea 100%);
+    border-radius: 100px;
+    padding: 0 12px;
+    font-size: 13px;
+    color: #fff;
+    line-height: 25px;
+  }
+  .buttonArrow {
+    width: 5px;
+    height: 8px;
+    display: inline-block;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAYCAYAAAAlBadpAAAABGdBT…KfETDslwQ0w+BMu5U9DCD+GkPuAJykPp97givL0Ttwz/uOv+2ktbotujffaaaaaelftksuqmcc);
+    margin-left: 5px;
+  }
+}
+
+.bill-board {
+  text-align: left;
+  font-size: 1rem;
+  .bill-board-item {
+    .bill-board-item-title {
+      font-weight: 600;
+      position: absolute;
+      top: 0.5rem;
+      left: 0.4rem;
+      width: 89.3%;
+      color: #333;
+    }
+    .bill-board-item-sub-title {
+      font-size: 60%;
+      position: absolute;
+      bottom: 1rem;
+      left: 0.4rem;
+      width: 89.3%;
+      color: #333;
+    }
+  }
+}
+
+.tab-wrap-wrap {
+  height: 40px;
+  line-height: 40px;
+  font-size: 1rem;
+  overflow: hidden;
+  .tab-wrap {
+    overflow: hidden;
+    overflow-x: scroll;
+    .tab-nav {
+      white-space: nowrap;
+      span {
+        display: inline-block;
+        //width: 82px;
+        padding: 0 10px;
+        text-align: center;
+        color: #333;
+      }
+      .on {
+        height: 38px;
+        position: relative;
+        color: #3aa682;
+        &:after {
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          height: 0;
+          width: 100%;
+          border-bottom: 2px solid #3aa682;
+          z-index: 99999;
+        }
+      }
+    }
+  }
+}
+
+.full-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}

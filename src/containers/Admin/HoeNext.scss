@@ -1,0 +1,646 @@
+/*
+Created by: @Frank_Alfred
+DEMO URL: http://gohooey.com/demo/sidebar/hoedemo.html
+
+[TABLE OF CONTENTS]
+
+1.  IMPORTS
+2.  RESET STYLES
+3.  HEADER STYLES
+4.  MAIN THEME CONTAINER STYLES
+    4.1 LEFT PANEL STYLES
+    4.2 CONTENT SECTION STYLES
+	4.3 MINIMIZED LEFT PANEL STYLE
+	4.4 THEME STYLE ACCORDING PHONE
+5.	Boxed Theme Layout Style
+6.	Theme Background Color Style
+*/
+
+/********** 1. IMPORTS **********/
+/********************************/
+// @import url('bootstrap.min.css');
+/* @import url('hoe-overlay-effect.css');
+@import url('hoe-push-effect.css');
+@import url('hoe-shrink-effect.css');
+@import url('hoe-rightsidebar.css');
+@import url('hoe-horizontal-navigation.css');
+@import url('hoe-theme-color.css'); */
+/* @import url('extra.css'); */
+// @import url('header.css');
+
+/********** 2. RESET STYLES **********/
+/*************************************/
+/* ********** Default Theme Style************* */
+html {
+  font-size: 16px;
+  height: 100%;
+}
+body {
+  background: #ccc;
+  height: 100%;
+}
+#hoeapp-wrapper {
+  background: #eef1f6;
+  color: #7e7e7e;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: 'lato', sans-serif;
+  direction: ltr;
+  line-height: 20px;
+  font-size: 13px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  a:focus {
+    outline: none;
+  }
+}
+
+/************** 3. Theme Header Style Start Here ********************/
+#hoe-header {
+  background: #fff none repeat scroll 0 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+  position: relative;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hoe-left-header {
+  background: #3498db;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 50px;
+  position: absolute;
+  float: left;
+  text-align: center;
+  width: 230px;
+  z-index: 999;
+  a {
+    color: #fff;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+    i {
+      color: #003c70;
+      font-size: 22px;
+      position: relative;
+      top: 3px;
+    }
+  }
+  .inner-scrollable {
+    overflow: scroll;
+  }
+}
+
+.hoe-right-header {
+  background: #fff none repeat scroll 0 0;
+  height: 50px;
+  line-height: 50px;
+  z-index: 101;
+  margin-left: 230px;
+  position: relative;
+}
+
+.left-navbar {
+  padding-left: 50px;
+  display: inline;
+  li {
+    display: inline-block;
+    .badge {
+      font-size: 11px;
+      min-width: 8px;
+      padding: 2px 5px;
+      position: absolute;
+      top: 2px;
+      border-radius: 50%;
+    }
+  }
+}
+.right-navbar {
+  //display: inline;
+  float: right;
+  padding-right: 7px !important;
+  li {
+    //display: inline-block;
+    float: left;
+  }
+}
+
+.hoe-sidebar-toggle a {
+  &:after {
+    background: transparent;
+    border: 0px solid #efefef;
+    content: '\f0c9';
+    font-family: FontAwesome;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0px 17px;
+    position: absolute;
+    color: #7e7e7e;
+    z-index: 1000;
+  }
+  &:hover:after {
+    background: #efefef;
+  }
+}
+.hoe-left-header > .hoe-sidebar-toggle > a {
+  display: none;
+}
+
+#hoe-header {
+  .hoe-left-header[hoe-position-type='relative'] {
+    position: relative;
+  }
+  .hoe-left-header[hoe-position-type='absolute'] {
+    position: absolute;
+  }
+  .hoe-left-header[hoe-position-type='fixed'] {
+    position: fixed;
+  }
+  .hoe-right-header[hoe-position-type='relative'] {
+    position: relative;
+  }
+  .hoe-right-header[hoe-position-type='absolute'] {
+    position: absolute;
+  }
+  .hoe-right-header[hoe-position-type='fixed'] {
+    padding-right: 230px;
+    position: fixed;
+    width: 100%;
+  }
+}
+/*******************************Theme Header Style Close Here ***********************************/
+
+/******************************* 4. main container Style start Here ***********************************/
+#hoeapp-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  clear: both;
+}
+/************************* 4.1 Theme Left Panel Style Start Here *********************************/
+#hoe-left-panel {
+  background: #fff none repeat scroll 0 0;
+  color: #7e7e7e;
+  width: 230px;
+  top: 0;
+  position: absolute;
+  float: left;
+  min-height: 100%;
+  z-index: 100;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  .profile-box {
+    border-bottom: 1px solid #efefef;
+    min-height: 50px;
+    padding: 5px 15px;
+    position: relative;
+    .media {
+      position: relative;
+      a {
+        margin-top: 2px;
+        img {
+          width: 40px;
+          height: 40px;
+          border: 1px solid #efefef;
+        }
+      }
+    }
+    .media-heading {
+      font-size: 1rem;
+    }
+  }
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    position: relative;
+    display: block;
+  }
+}
+.menu-item {
+  background: #fff;
+  border-top: 1px solid #efefef;
+  color: #7e7e7e;
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 10px;
+  position: relative;
+  // .menu-text {
+  //   display: inline-block;
+  // }
+  .sul {
+    position: absolute;
+    right: 10px;
+    padding: 0 3px;
+    background-color: #ebebeb;
+  }
+
+  &:hover,
+  &:focus {
+    color: #000;
+    background: #f1f1f1;
+  }
+}
+.menu-item.active {
+  background: #f1f1f1;
+  border-top: 1px solid #efefef;
+  color: #000;
+  .selected {
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #7e7e7e;
+    border-top: 7px solid transparent;
+    display: inline-block;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 13px;
+    vertical-align: middle;
+    width: 0;
+  }
+}
+
+.nav-level {
+  display: block;
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+.hoe-has-menu {
+  &:after {
+    font-family: FontAwesome;
+    content: '\f107';
+    font-size: 15px;
+    position: relative;
+    float: right;
+  }
+}
+.hoe-has-menu.opened {
+  &:after {
+    content: '\f106' !important;
+  }
+}
+
+.hoe-sub-menu {
+  .menu-item {
+    //padding-left: 15px;
+    position: relative;
+    .menu-text {
+      padding-left: 15px;
+      position: relative;
+      &:before {
+        font-family: FontAwesome;
+        content: '\f0da';
+        font-size: 14px;
+        position: relative;
+        float: left;
+        left: 4px;
+      }
+    }
+  }
+  .hoe-has-menu {
+    &:after {
+      font-family: FontAwesome;
+      content: '\f103';
+      font-size: 15px;
+      position: relative;
+      float: right;
+    }
+  }
+  .menu-item.opened {
+    &:after {
+      font-family: FontAwesome;
+      content: '\f102';
+      font-size: 15px;
+      position: relative;
+      float: right;
+    }
+  }
+}
+
+.hoe-sub-menu {
+  .menu-item {
+    padding-left: 15px;
+  }
+  .hoe-sub-menu {
+    .menu-item {
+      padding-left: 25px;
+    }
+    .hoe-sub-menu {
+      .menu-item {
+        padding-left: 35px;
+      }
+    }
+  }
+}
+/********************************** Theme Left Panel Style Close Here ******************************/
+/*************************** 4.2 Theme Content Section Style Start Here ********************************/
+#main-content {
+  margin-left: 230px;
+  position: relative;
+}
+/******************* Theme Content Section Style Close Here *******************************/
+/****************** 4.3 Minimized Left Panel Style Start Here *********************************/
+#hoe-header.hoe-minimized-lpanel {
+  .hoe-left-header {
+    width: 50px;
+    > a > span {
+      display: none;
+    }
+  }
+  .hoe-right-header {
+    margin-left: 50px;
+    padding-right: 0px;
+  }
+  .hoe-right-header[hoe-position-type='fixed'] {
+    margin-left: 50px;
+    padding-right: 50px;
+  }
+}
+.hoe-minimized-lpanel #hoe-left-panel {
+  width: 50px;
+  .profile-box {
+    border-bottom: 0px solid #efefef;
+    padding: 5px;
+  }
+  .media-body {
+    display: none;
+  }
+  .nav-level {
+    display: none;
+  }
+
+  .menu {
+    > li {
+      > .menu-item {
+        > i {
+          display: inline;
+          font-size: 15px;
+          padding-left: 6px;
+          padding-right: 6px;
+        }
+        > span {
+          display: none;
+        }
+        > .menu-text {
+          position: absolute;
+          left: 52px;
+        }
+      }
+      &:hover,
+      &:focus {
+        width: 230px;
+        > .menu-item > span {
+          display: inline-block;
+        }
+      }
+    }
+
+    > .hoe-has-menu:after {
+      display: none;
+    }
+    > .hoe-has-menu {
+      > .hoe-sub-menu {
+        left: 50px;
+      }
+    }
+  }
+  .hoe-has-menu {
+    &:hover,
+    &:focus {
+      display: block !important;
+      border-right: 1px solid #efefef;
+      .menu-item {
+        margin-bottom: -1px;
+        border-radius: 0px 4px 4px 0px;
+        display: block !important;
+        //position: relative;
+        // > span {
+        //   display: inline-block !important;
+        // }
+      }
+      .hoe-sub-menu {
+        display: block !important;
+        border-right: 1px solid #efefef;
+      }
+    }
+  }
+  .hoe-sub-menu {
+    display: none !important;
+    position: absolute;
+    width: 180px;
+  }
+}
+/****************** Minimized Left Panel Style Start Here *********************************/
+
+/******************* 4.4 Theme Style for Phone start here***************************************/
+#hoeapp-wrapper[data-hoe-device-type='phone'].hoe-hide-lpanel {
+  #hoe-left-panel {
+    display: none;
+  }
+  .hoe-right-header {
+    margin-left: 0px;
+  }
+
+  #hoeapp-container[data-hoe-lpanel-effect='shrink'] #main-content {
+    margin-left: 0px;
+  }
+  #hoeapp-container[data-hoe-lpanel-effect='overlay'] #main-content {
+    margin-left: 0px;
+  }
+  #hoeapp-container[data-hoe-lpanel-effect='push'] #main-content {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #hoe-header[data-hoe-lpanel-effect='shrink']
+    .hoe-right-header[hoe-position-type='relative'] {
+    margin-left: 0px;
+    padding-right: 0;
+  }
+  #hoe-header[data-hoe-lpanel-effect='shrink']
+    .hoe-right-header[hoe-position-type='fixed'] {
+    margin-left: 0px;
+    padding-right: 0;
+  }
+  #hoe-header[data-hoe-lpanel-effect='overlay']
+    .hoe-right-header[hoe-position-type='relative'] {
+    margin-left: 0px;
+    padding-right: 0;
+  }
+  #hoe-header[data-hoe-lpanel-effect='overlay']
+    .hoe-right-header[hoe-position-type='fixed'] {
+    margin-left: 0px;
+    padding-right: 0;
+  }
+  #hoe-header[data-hoe-lpanel-effect='push']
+    .hoe-right-header[hoe-position-type='relative'] {
+    margin-left: 0px;
+    padding-right: 0;
+  }
+  #hoe-header[data-hoe-lpanel-effect='push']
+    .hoe-right-header[hoe-position-type='fixed'] {
+    margin-left: 0px;
+    padding-right: 0;
+  }
+}
+
+#hoeapp-wrapper[data-hoe-device-type='phone'] {
+  #hoe-header {
+    position: none;
+    height: 100px;
+  }
+  .hoe-left-header {
+    width: 100%;
+    float: none;
+  }
+  #hoe-left-panel[hoe-position-type='fixed'] {
+    top: 100px;
+  }
+  .hoe-right-header {
+    width: 100%;
+    padding-left: 0px !important;
+    margin-left: 0px;
+    position: relative;
+    z-index: 999;
+    top: 50px;
+  }
+
+  #hoe-left-panel {
+    display: block;
+    z-index: 1024;
+  }
+  #main-content {
+    margin-left: 0px;
+  }
+
+  .hoe-left-header > .hoe-sidebar-toggle > a {
+    display: block;
+  }
+  #hoe-header > .hoe-right-header .hoe-sidebar-toggle a:after {
+    display: none !important;
+  }
+  .hoe-left-header .hoe-sidebar-toggle a:after {
+    background: transparent;
+    border-radius: 4px;
+    content: '';
+    font-family: FontAwesome;
+    font-size: 16px;
+    left: 5px;
+    line-height: 39px;
+    padding: 1px 13px;
+    position: absolute;
+    top: 3px;
+    z-index: 1000;
+    display: block !important;
+    color: #003c70;
+    border: 0px solid #003c70;
+    font-size: 14px;
+  }
+  #hoeapp-container[data-hoe-lpanel-effect='shrink'] #main-content {
+    margin-left: 230px;
+  }
+  #hoeapp-container[data-hoe-lpanel-effect='overlay'] #main-content {
+    margin-left: 0px;
+  }
+  #hoeapp-container[data-hoe-lpanel-effect='push'] #main-content {
+    margin-left: 230px;
+    margin-right: -230px;
+  }
+  #hoe-header[data-hoe-lpanel-effect='shrink']
+    .hoe-right-header[hoe-position-type='relative'] {
+    margin-left: 0px;
+    padding-right: 0;
+  }
+  #hoe-header[data-hoe-lpanel-effect='shrink']
+    .hoe-right-header[hoe-position-type='fixed'] {
+    margin-left: 0px;
+    padding-right: 0;
+  }
+  #hoe-header[data-hoe-lpanel-effect='overlay']
+    .hoe-right-header[hoe-position-type='relative'] {
+    margin-left: 0px;
+    padding-right: 0;
+  }
+  #hoe-header[data-hoe-lpanel-effect='overlay']
+    .hoe-right-header[hoe-position-type='fixed'] {
+    margin-left: 0px;
+    padding-right: 0;
+  }
+
+  #hoe-header[data-hoe-lpanel-effect='push']
+    .hoe-right-header[hoe-position-type='relative'] {
+    margin-left: 0px;
+    padding-right: 0;
+  }
+  #hoe-header[data-hoe-lpanel-effect='push']
+    .hoe-right-header[hoe-position-type='fixed'] {
+    margin-left: 0px;
+    padding-right: 0;
+  }
+}
+
+#hoeapp-wrapper[data-hoe-device-type='desktop']
+  .hoe-left-header
+  .hoe-sidebar-toggle
+  a:after {
+  display: none !important;
+}
+#hoeapp-wrapper[data-hoe-device-type='tablet']
+  .hoe-left-header
+  .hoe-sidebar-toggle
+  a:after {
+  display: none !important;
+}
+/****************************** Theme Style for Phone Close here **********************************/
+
+.avatar {
+  height: 40px;
+  margin-top: -2px;
+  width: 40px;
+}
+
+.icon-circle {
+  border: 1px solid #ccc;
+  border-radius: 21px;
+  margin: 2px;
+  padding: 10px 11px !important;
+}
+
+.hoe-searchbar {
+  input {
+    background: #f3f3f3 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 30px;
+    box-shadow: none;
+    float: right;
+    font-size: 14px;
+    height: 35px;
+    margin: 7px 4px 0;
+    width: 100px;
+    position: absolute;
+    padding-left: 22px;
+    z-index: 100;
+  }
+  input,
+  .search-content input:focus {
+    transition: all 0.3s ease 0s;
+  }
+  .search-icon {
+    left: 11px;
+    position: relative;
+  }
+}

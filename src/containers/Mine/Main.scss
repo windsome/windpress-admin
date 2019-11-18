@@ -1,0 +1,129 @@
+.user {
+  position: relative;
+  height: 4rem;
+  line-height: 1rem;
+  font-size: 1rem;
+  margin: 0 auto;
+  background: #d34201
+    url(//gw.alicdn.com/tfscom/TB10.51HFXXXXXqXpXXYx6l2pXX-750-235.jpg_q90)
+    no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  .set-btn {
+    span {
+      margin: 0.267rem 0.32rem 0 0;
+      padding: 0.2rem;
+      line-height: 0.747em;
+      font-size: 0.5em;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+  .user-photo {
+    position: absolute;
+    bottom: -1rem;
+    left: 0.467rem;
+    width: 1.867rem;
+    height: 1.867rem;
+    text-align: center;
+    border-radius: 100%;
+    //padding: .067rem;
+    background: rgba(255, 255, 255, 0.7);
+    transform: translateZ(1px);
+    overflow: hidden;
+  }
+  .user-nick {
+    position: absolute;
+    float: left;
+    width: 100%;
+    padding-left: 2.667rem;
+    box-sizing: border-box;
+    bottom: 0.02rem;
+    font-size: 0.8rem;
+    .level {
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 0.533rem;
+      height: 1rem;
+    }
+    .level3 {
+      background-image: url(http://gw.alicdn.com/tfscom/TB1PcQkHFXXXXcQXVXXpQsyGpXX-40-32.png_q90);
+    }
+  }
+}
+
+section {
+  margin-bottom: 0.32rem;
+  border-bottom: 0.027rem solid #e7e7e7;
+  background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.user-behavior {
+  font-size: 0.6rem;
+  ul {
+    margin: 0 auto;
+    padding-left: 2.267rem;
+    box-sizing: border-box;
+    li {
+      border-left: 1px solid #e7e7e7;
+      text-align: center;
+      a {
+        color: #000;
+      }
+      &:first-child {
+        border: 0;
+      }
+    }
+  }
+}
+
+.order-act {
+  margin-bottom: 0;
+  ul {
+    //height: 1.76rem;
+    font-size: 1rem;
+    text-align: center;
+    li {
+      width: 100%;
+      a {
+        display: block;
+        position: relative;
+        color: #051b28;
+      }
+    }
+    .sub {
+      margin-top: 0.067rem;
+      font-size: 0.6em;
+    }
+    .number {
+      position: absolute;
+      font-size: 0.5em;
+      line-height: 1.5em;
+      height: 1.5em;
+      top: 0.213rem;
+      right: 0;
+      min-width: 0.187rem;
+      padding: 0 0.133rem;
+      border: 2px solid #ff5000;
+      border-radius: 0.333rem;
+      color: #ff5000;
+      font-weight: 700;
+      background: #fff;
+      overflow: hidden;
+      opacity: 1;
+      transition: all 0.4s ease-out;
+    }
+  }
+}
+
+.mine-footer {
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #fff;
+  padding: 0 15px;
+  .nick {
+    text-align: left;
+  }
+}

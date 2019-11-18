@@ -1,0 +1,16 @@
+.seckill {
+  .cur {
+    color: #f63;
+    font-size: 1rem;
+  }
+  .past {
+    color: #999;
+    font-size: 0.8rem;
+    text-decoration: line-through;
+  }
+  .sale {
+    color: #999;
+    float: right;
+    font-size: 0.8rem;
+  }
+}

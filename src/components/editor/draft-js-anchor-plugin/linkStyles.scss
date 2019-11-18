@@ -1,0 +1,26 @@
+.draft-plugin-anchor-input {
+  height: 34px;
+  width: 220px;
+  padding: 0 12px;
+  font-size: 15px;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  color: #444;
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #888;
+  }
+}
+
+.draft-plugin-anchor-inputInvalid {
+  color: #e65757;
+}
+
+.draft-plugin-anchor-link {
+  color: #2996da;
+  text-decoration: underline;
+}

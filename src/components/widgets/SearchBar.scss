@@ -1,0 +1,24 @@
+.searchbar {
+  box-sizing: content-box;
+  position: relative;
+  width: 100%;
+  .search-text {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #fff;
+    transition: opacity 200ms;
+    outline: none;
+    padding: 2px 70px 1px 7px;
+  }
+  .search-btn {
+    position: absolute;
+    right: 15px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+}

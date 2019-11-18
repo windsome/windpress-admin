@@ -1,0 +1,56 @@
+.itemlist-item {
+  text-align: left;
+  padding: 5px;
+  margin-top: 2px;
+  background-color: #fff;
+  .b-desc {
+    line-height: 1.3em;
+    font-size: 70%;
+    color: #777;
+  }
+  .highlight {
+    color: #ff8400;
+  }
+  .leftpic {
+    margin: 10px;
+    position: relative;
+    .thumb {
+      width: 60px;
+      height: auto;
+      max-height: 45px;
+    }
+  }
+  .iteminfo {
+    overflow: hidden;
+    .shop-name {
+      display: block;
+      font-size: 1rem;
+      line-height: 1rem;
+      padding: 5px 0;
+      text-align: left;
+      font-weight: 400;
+      color: #333;
+    }
+    .detail {
+      margin-top: 2px;
+      height: auto;
+      line-height: 1.4rem;
+      .cur {
+        color: #f63;
+        .price {
+          font-size: 1rem;
+        }
+      }
+      .past {
+        color: #999;
+        font-size: 0.8rem;
+        text-decoration: line-through;
+      }
+      .sale {
+        color: #999;
+        float: right;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

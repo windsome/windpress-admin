@@ -1,0 +1,179 @@
+.intro {
+  padding: 0 0 6px 0;
+  position: relative;
+  .shop-name {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 6px;
+  }
+  .shop-info {
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #999;
+    .comment {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 2px;
+    }
+    .verify {
+      display: inline-block;
+      height: 16px;
+      line-height: 16px;
+      text-align: center;
+      vertical-align: middle;
+      padding-left: 7px;
+      border-left: 1px solid #e1e1e1;
+      margin-left: 5px;
+    }
+    .booking {
+      float: right;
+      margin-top: 3px;
+    }
+  }
+}
+
+.mod-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.album2 {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0;
+  .itemwrap {
+    display: inline-block;
+    .item {
+      display: block;
+      float: left;
+      position: relative;
+      width: 96px;
+      height: 66px;
+      margin-right: 3px;
+      .image {
+        width: 100%;
+      }
+    }
+    .video {
+      width: 117px;
+      .icon-shop {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -15px;
+        margin-top: -15px;
+        overflow: hidden;
+        display: block;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        color: #fff;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.address {
+  flex-basis: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.main-address {
+  display: block;
+  max-width: 94%;
+  max-height: 40px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.second-address {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.phone-right {
+  color: #999;
+  font-size: 12px;
+  padding-right: 15px;
+}
+
+.hd {
+  height: 45px;
+  line-height: 45px;
+  font-size: 15px;
+  display: block;
+  color: #333;
+  white-space: nowrap;
+  word-wrap: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: relative;
+  .left {
+    float: left;
+    .icon_ke {
+      width: 20px;
+      height: 20px;
+      margin-right: 6px;
+      display: inline-block;
+      background: url(//www.dpfile.com/mod/app-vc-education-shop/0.4.22/src/img/icon_lesson@2x.png)
+        no-repeat center center;
+      background-size: contain;
+    }
+    .titleText {
+      color: #333;
+      font-size: 15px;
+      height: 20px;
+      line-height: 20px;
+      display: block;
+    }
+  }
+  .right {
+    float: right;
+    height: 45px;
+    line-height: 45px;
+    color: #999;
+    font-size: 12px;
+  }
+}
+
+.tagBox {
+  font-size: 0;
+  padding: 0 0;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: -1px;
+  .tag {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 6px;
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    color: #666;
+  }
+}

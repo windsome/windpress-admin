@@ -1,0 +1,50 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>md5计算</title>
+    <style>
+        h1, h2 {
+            font-weight: normal;
+        }
+
+        #msg {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<script type="module">
+  // or an inline script
+  import calMd5sum from '../md5sum.js';
+  import FileFront from '../FileFront.js';
+  (function () {
+  console.log ("will md5");
+  let onprogress = (progress) => {
+    console.log("progress:", progress);
+  }
+        // 监听表单提交
+        document.getElementById('submitBtn').onclick = function (e) {
+            console.log("click:", e);
+            var file = document.getElementById('fileSelector').files[0];
+            if (!file) {
+                document.getElementById('msg').innerText = '未选择上传文件';
+                return;
+            }
+            console.log("begin md5")
+            file && calMd5sum({file: new FileFront(file), onprogress});
+        };
+    })();
+</script>
+<body>
+
+<h1>md5校验</h1>
+<div>支持 onprogress</div>
+
+<input id="fileSelector" type="file">
+<input id="submitBtn" type="submit">
+
+<div id="msg"></div>
+
+</body>
+</html>
