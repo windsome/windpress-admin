@@ -5,7 +5,7 @@
   "dependencies": {
     "@mikeljames/draft-js-drag-n-drop-upload-plugin": "^2.0.1",
     "ansi-styles": "^3.2.0",
-    "bootstrap": "^4.0.0-beta",
+    "bootstrap": "^4.3.1",
     "classnames": "^2.2.5",
     "cos-js-sdk-v5": "^0.3.7",
     "draft-js": "^0.10.5",
